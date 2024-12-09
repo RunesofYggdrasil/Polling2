@@ -13,7 +13,7 @@ def get_client_ip(request):
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    choices = question.choice_set.all()  # Retrieve all choices for the question
+    choices = [choice for choice in Choice.objects.all() if choice.question == question]  # Retrieve all choices for the question
     return render(request, 'polls/results.html', {'question': question, 'choices': choices})
 
 def index(request):
