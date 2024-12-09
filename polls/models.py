@@ -13,8 +13,8 @@ class Question(models.Model): #parent
 class Choice(models.Model): #tracks each choice
     question = models.ForeignKey(Question, on_delete = models.CASCADE, related_name='choices')
     choice_text = models.CharField(max_length = 200)
-    votes = models.IntegerField(default = 0) #tracks votes of each choice w/o associating w/ any user
     meal = models.CharField(max_length = 50, null = True, blank = True)
+    votes = models.IntegerField(default = 0) #tracks votes of each choice w/o associating w/ any user
 
     def __str__(self):
         return self.choice_text
