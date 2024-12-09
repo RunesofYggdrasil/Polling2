@@ -17,19 +17,15 @@ class QuestionAdmin(admin.ModelAdmin): #what will be displayed on admin post log
               ('Date Information', {'fields': ['pub_date'], 'classes': ['collapse']}),] #latter enables to collapse
     
     inlines = [ChoiceInLine] #enables admin to edit choices
-
     list_display = ('question_text', 'pub_date')
-
     list_filter = ['pub_date'] 
-
-    search_fields = ['choice_text'] #can search among choices to see if desired item is there(and if user is lazy)
+    search_fields = ['choices__choice_text'] #can search among choices to see if desired item is there(and if user is lazy)
+    actions = ['export_as_json'] #actions is an attribute of an Admin class, here this 'custom action' allows us to export selected questions as JSON data
 
     def get_readonly_fields(self, request, obj=None): #request refer to http req, obj= none if we want to edit new question
         if obj:
             return ['pub_date']
         return [] #all questions editable
-
-    actions = ['export_as_json'] #actions is an attribute of an Admin class, here this 'custom action' allows us to export selected questions as JSON data
 
     def export_as_json(self, request, queryset): #queryset goes through questions selected by admin
         data = []
@@ -40,12 +36,13 @@ class QuestionAdmin(admin.ModelAdmin): #what will be displayed on admin post log
                 "fields": {
                     "question_text": question.question_text,
                     "pub_date": question.pub_date.isoformat(), #typa string for JSON timestamps
+                    "choices": [{"choice_text": choice.choice_text, "meal": choice.meal} for choice in question.choices.all()]
                 }
             })
+            data.append(data)
         return JsonResponse(data, safe=False) #helper function, Django's inbuilt
     
     export_as_json.short_description = "Export selected questions as JSON"
-
 
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Choice)

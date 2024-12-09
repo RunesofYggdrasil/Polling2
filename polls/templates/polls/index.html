@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results for {{ question.question_text }}</title>
+</head>
+<body>
+    <h1>{{ question.question_text }}</h1>
+    <ul>
+        {% for choice in choices %}
+            <li>{{ choice.choice_text }}: {{ choice.votes }} vote(s)</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'polls:index' %}">Back to Home</a>
+</body>
+</html>
