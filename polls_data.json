@@ -1,0 +1,1292 @@
+[
+    {
+      "model": "polls.question",
+      "pk": 1,
+      "fields": {
+        "question_text": "What would you like for breakfast?",
+        "pub_date": "2024-12-08T00:00:00Z"
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 1,
+      "fields": {
+        "question": 1,
+        "choice_text": "Cinnamon Chia Pudding",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 2,
+      "fields": {
+        "question": 1,
+        "choice_text": "Fresh Berries",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 3,
+      "fields": {
+        "question": 1,
+        "choice_text": "Waffles",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 4,
+      "fields": {
+        "question": 1,
+        "choice_text": "Strawberry Yoghurt",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 5,
+      "fields": {
+        "question": 1,
+        "choice_text": "Vanilla Yoghurt",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 6,
+      "fields": {
+        "question": 1,
+        "choice_text": "Watermelon",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 7,
+      "fields": {
+        "question": 1,
+        "choice_text": "Pineapple",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 8,
+      "fields": {
+        "question": 1,
+        "choice_text": "Melon",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 9,
+      "fields": {
+        "question": 1,
+        "choice_text": "Scrambled Just® Egg",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 10,
+      "fields": {
+        "question": 1,
+        "choice_text": "Sunflower Seeds",
+        "votes":0
+      }    
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 11,
+      "fields": {
+        "question": 1,
+        "choice_text": "Diced Pork Sausage",
+        "votes":0
+     }    
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 12,
+      "fields": {
+        "question": 1,
+        "choice_text": "Seasoned Scrambled Eggs",
+        "votes":0
+      }    
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 13,
+      "fields": {
+        "question": 1,
+        "choice_text": "Turkey Patty",
+        "votes":0
+      }    
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Breakfast",
+      "pk": 14,
+      "fields": {
+        "question": 1,
+        "choice_text": "Hash Brown Patty",
+        "votes":0
+      }    
+    },
+    {
+      "model": "polls.question",
+      "pk": 2,
+      "fields": {
+        "question_text": "What would you like for lunch?",
+        "pub_date": "2024-12-08T00:00:00Z"
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 1,
+      "fields": {
+        "question": 1,
+        "choice_text": "Veggie Burger",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 2,
+      "fields": {
+        "question": 1,
+        "choice_text": "Middle Eastern Tomato Sauce",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 3,
+      "fields": {
+        "question": 1,
+        "choice_text": "Greek Grilled Chicken",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 4,
+      "fields": {
+        "question": 1,
+        "choice_text": "Roasted Eggplant & Zucchini",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 5,
+      "fields": {
+        "question": 1,
+        "choice_text": "Seasoned Home Fries",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 6,
+      "fields": {
+        "question": 1,
+        "choice_text": "Pasta Alfredo",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 7,
+      "fields": {
+        "question": 1,
+        "choice_text": "Cheesy Bacon Hot Dog",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 8,
+      "fields": {
+        "question": 1,
+        "choice_text": "Chicken & Tomato Alfredo Pasta Bake",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 9,
+      "fields": {
+        "question": 1,
+        "choice_text": "Taco Beef",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 10,
+      "fields": {
+        "question": 1,
+        "choice_text": "Israeli Couscous Salad",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 11,
+      "fields": {
+        "question": 1,
+        "choice_text": "Chicken Tagine",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 12,
+      "fields": {
+        "question": 1,
+        "choice_text": "Sweet Chili Green Beans",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 13,
+      "fields": {
+        "question": 1,
+        "choice_text": "Diced Seasoned Chicken",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 14,
+      "fields": {
+        "question": 1,
+        "choice_text": "Balsamic Marinated Grape Tomatoes",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 15,
+      "fields": {
+        "question": 1,
+        "choice_text": "Crispy French Fries",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 16,
+      "fields": {
+      "question": 1,
+        "choice_text": "Pepperoni Pizza",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 17,
+      "fields": {
+        "question": 1,
+        "choice_text": "Pesto Turkey & Mozzarella Panini",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 18,
+        "fields": {
+        "question": 1,
+        "choice_text": "Old Bay Potato Chips",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 19,
+      "fields": {
+        "question": 1,
+        "choice_text": "Black Bean Jicama Salad",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 20,
+      "fields": {
+        "question": 1,
+        "choice_text": "Roasted Tofu",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 21,
+      "fields": {
+        "question": 1,
+        "choice_text": "Cheese Pizza",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 22,
+        "fields": {
+        "question": 1,
+        "choice_text": "Cream Cheese Iced Carrot Cake",
+        "votes": 0
+       }
+    },
+    {
+       "model": "polls.choice",
+       "meal": "Lunch",
+       "pk": 23,
+       "fields": {
+        "question": 1,
+        "choice_text": "Cream Cheese Iced Carrot Cake",
+        "votes": 0
+       }
+    },
+    {
+       "model": "polls.choice",
+       "meal": "Lunch",
+       "pk": 24,
+       "fields": {
+        "question": 1,
+        "choice_text": "Mediterranean Pasta Salad",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 25,
+      "fields": {
+        "question": 1,
+        "choice_text": "Fajita Vegetable Medley",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 26,
+      "fields": {
+        "question": 1,
+        "choice_text": "Vegan Pasta Bake",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 27,
+      "fields": {
+        "question": 1,
+        "choice_text": "Blanched Broccoli",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 28,
+      "fields": {
+        "question": 1,
+        "choice_text": "Red Potato Salad",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.question",
+      "pk": 2,
+      "fields": {
+        "question_text": "What would you like for lunch?"
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 1,
+      "fields": {
+        "question": 1,
+        "choice_text": "Veggie Burger",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 2,
+      "fields": {
+        "question": 1,
+        "choice_text": "Middle Eastern Tomato Sauce",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 3,
+      "fields": {
+        "question": 1,
+            "choice_text": "Greek Grilled Chicken",
+            "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 4,
+      "fields": {
+        "question": 1,
+        "choice_text": "Roasted Eggplant & Zucchini",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 5,
+      "fields": {
+        "question": 1,
+        "choice_text": "Seasoned Home Fries",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 6,
+      "fields": {
+        "question": 1,
+        "choice_text": "Pasta Alfredo",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 7,
+      "fields": {
+        "question": 1,
+        "choice_text": "Cheesy Bacon Hot Dog",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 8,
+      "fields": {
+        "question": 1,
+        "choice_text": "Chicken & Tomato Alfredo Pasta Bake",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 9,
+      "fields": {
+        "question": 1,
+        "choice_text": "Taco Beef",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 10,
+      "fields": {
+        "question": 1,
+        "choice_text": "Israeli Couscous Salad",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 11,
+      "fields": {
+        "question": 1,
+        "choice_text": "Chicken Tagine",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 12,
+      "fields": {
+        "question": 1,
+        "choice_text": "Sweet Chili Green Beans",
+        "votes": 0
+       }
+    },
+    {
+       "model": "polls.choice",
+       "meal": "Lunch",
+       "pk": 13,
+       "fields": {
+        "question": 1,
+        "choice_text": "Diced Seasoned Chicken",
+        "votes": 0
+       }
+    },
+    {
+       "model": "polls.choice",
+       "meal": "Lunch",
+       "pk": 14,
+       "fields": {
+        "question": 1,
+        "choice_text": "Balsamic Marinated Grape Tomatoes",
+        "votes": 0
+        }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 15,
+      "fields": {
+        "question": 1,
+        "choice_text": "Crispy French Fries",
+        "votes": 0
+       }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 16,
+      "fields": {
+        "question": 1,
+        "choice_text": "Pepperoni Pizza",
+        "votes": 0
+      }
+    },
+    {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 17,
+    "fields": {
+      "question": 1,
+      "choice_text": "Pesto Turkey & Mozzarella Panini",
+      "votes": 0
+     }
+    },
+    {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 18,
+    "fields": {
+      "question": 1,
+      "choice_text": "Old Bay Potato Chips",
+      "votes": 0
+      }
+    },
+    {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 19,
+     "fields": {
+        "question": 1,
+        "choice_text": "Black Bean Jicama Salad",
+        "votes": 0
+      }
+    },
+    {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 20,
+     "fields": {
+        "question": 1,
+        "choice_text": "Roasted Tofu",
+        "votes": 0
+      }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 21,
+      "fields": {
+        "question": 1,
+        "choice_text": "Cheese Pizza",
+        "votes": 0
+      }
+    },
+    {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 22,
+     "fields": {
+        "question": 1,
+        "choice_text": "Cream Cheese Iced Carrot Cake",
+        "votes": 0
+     }
+    },
+    {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 23,
+     "fields": {
+        "question": 1,
+        "choice_text": "Cream Cheese Iced Carrot Cake",
+        "votes": 0
+      }
+    },
+    {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 24,
+     "fields": {
+        "question": 1,
+        "choice_text": "Mediterranean Pasta Salad",
+        "votes": 0
+      }
+    },
+    {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 25,
+     "fields": {
+      "question": 1,
+      "choice_text": "Fajita Vegetable Medley",
+      "votes": 0
+      }
+    },
+    {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 26,
+     "fields": {
+        "question": 1,
+        "choice_text": "Vegan Pasta Bake",
+        "votes": 0
+     }
+    },
+    {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 27,
+     "fields": {
+        "question": 1,
+        "choice_text": "Blanched Broccoli",
+        "votes": 0
+        }
+    },
+    {
+      "model": "polls.choice",
+      "meal": "Lunch",
+      "pk": 28,
+      "fields": {
+        "question": 1,
+        "choice_text": "Red Potato Salad",
+        "votes": 0
+      }
+    },
+    {"model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "choice_text": "Veggie Burger",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "choice_text": "Middle Eastern Tomato Sauce",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "choice_text": "Greek Grilled Chicken",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "choice_text": "Roasted Eggplant & Zucchini",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 5,
+    "fields": {
+      "question": 1,
+      "choice_text": "Seasoned Home Fries",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 6,
+    "fields": {
+      "question": 1,
+      "choice_text": "Pasta Alfredo",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 7,
+    "fields": {
+      "question": 1,
+      "choice_text": "Cheesy Bacon Hot Dog",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 8,
+    "fields": {
+      "question": 1,
+      "choice_text": "Chicken & Tomato Alfredo Pasta Bake",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 9,
+    "fields": {
+      "question": 1,
+      "choice_text": "Taco Beef",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 10,
+    "fields": {
+      "question": 1,
+      "choice_text": "Israeli Couscous Salad",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 11,
+    "fields": {
+      "question": 1,
+      "choice_text": "Chicken Tagine",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 12,
+    "fields": {
+      "question": 1,
+      "choice_text": "Sweet Chili Green Beans",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 13,
+    "fields": {
+      "question": 1,
+      "choice_text": "Diced Seasoned Chicken",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 14,
+    "fields": {
+      "question": 1,
+      "choice_text": "Balsamic Marinated Grape Tomatoes",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 15,
+    "fields": {
+      "question": 1,
+      "choice_text": "Crispy French Fries",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 16,
+    "fields": {
+    "question": 1,
+      "choice_text": "Pepperoni Pizza",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 17,
+    "fields": {
+      "question": 1,
+      "choice_text": "Pesto Turkey & Mozzarella Panini",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 18,
+      "fields": {
+      "question": 1,
+      "choice_text": "Old Bay Potato Chips",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 19,
+    "fields": {
+      "question": 1,
+      "choice_text": "Black Bean Jicama Salad",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 20,
+    "fields": {
+      "question": 1,
+      "choice_text": "Roasted Tofu",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 21,
+    "fields": {
+      "question": 1,
+      "choice_text": "Cheese Pizza",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 22,
+      "fields": {
+      "question": 1,
+      "choice_text": "Cream Cheese Iced Carrot Cake",
+      "votes": 0
+     }
+  },
+  {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 23,
+     "fields": {
+      "question": 1,
+      "choice_text": "Cream Cheese Iced Carrot Cake",
+      "votes": 0
+     }
+  },
+  {
+     "model": "polls.choice",
+     "meal": "Lunch",
+     "pk": 24,
+     "fields": {
+      "question": 1,
+      "choice_text": "Mediterranean Pasta Salad",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 25,
+    "fields": {
+      "question": 1,
+      "choice_text": "Fajita Vegetable Medley",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 26,
+    "fields": {
+      "question": 1,
+      "choice_text": "Vegan Pasta Bake",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 27,
+    "fields": {
+      "question": 1,
+      "choice_text": "Blanched Broccoli",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Lunch",
+    "pk": 28,
+    "fields": {
+      "question": 1,
+      "choice_text": "Red Potato Salad",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.question",
+    "pk": 3,
+    "fields": {
+      "question_text": "What would you like for dinner?",
+      "pub_date": "2024-12-08T00:00:00Z"
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "choice_text": "Veggie Burger",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "choice_text": "Middle Eastern Tomato Sauce",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+          "choice_text": "Greek Grilled Chicken",
+          "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "choice_text": "Roasted Eggplant & Zucchini",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 5,
+    "fields": {
+      "question": 1,
+      "choice_text": "Seasoned Home Fries",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 6,
+    "fields": {
+      "question": 1,
+      "choice_text": "Pasta Alfredo",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 7,
+    "fields": {
+      "question": 1,
+      "choice_text": "Cheesy Bacon Hot Dog",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 8,
+    "fields": {
+      "question": 1,
+      "choice_text": "Chicken & Tomato Alfredo Pasta Bake",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 9,
+    "fields": {
+      "question": 1,
+      "choice_text": "Taco Beef",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 10,
+    "fields": {
+      "question": 1,
+      "choice_text": "Israeli Couscous Salad",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 11,
+    "fields": {
+      "question": 1,
+      "choice_text": "Chicken Tagine",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 12,
+    "fields": {
+      "question": 1,
+      "choice_text": "Sweet Chili Green Beans",
+      "votes": 0
+     }
+  },
+  {
+     "model": "polls.choice",
+     "meal": "Dinner",
+     "pk": 13,
+     "fields": {
+      "question": 1,
+      "choice_text": "Diced Seasoned Chicken",
+      "votes": 0
+     }
+  },
+  {
+     "model": "polls.choice",
+     "meal": "Dinner",
+     "pk": 14,
+     "fields": {
+      "question": 1,
+      "choice_text": "Balsamic Marinated Grape Tomatoes",
+      "votes": 0
+      }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 15,
+    "fields": {
+      "question": 1,
+      "choice_text": "Crispy French Fries",
+      "votes": 0
+     }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 16,
+    "fields": {
+      "question": 1,
+      "choice_text": "Pepperoni Pizza",
+      "votes": 0
+    }
+  },
+  {
+  "model": "polls.choice",
+  "meal": "Dinner",
+  "pk": 17,
+  "fields": {
+    "question": 1,
+    "choice_text": "Pesto Turkey & Mozzarella Panini",
+    "votes": 0
+   }
+  },
+  {
+  "model": "polls.choice",
+  "meal": "Dinner",
+  "pk": 18,
+  "fields": {
+    "question": 1,
+    "choice_text": "Old Bay Potato Chips",
+    "votes": 0
+    }
+  },
+  {
+   "model": "polls.choice",
+   "meal": "Dinner",
+   "pk": 19,
+   "fields": {
+      "question": 1,
+      "choice_text": "Black Bean Jicama Salad",
+      "votes": 0
+    }
+  },
+  {
+   "model": "polls.choice",
+   "meal": "Dinner",
+   "pk": 20,
+   "fields": {
+      "question": 1,
+      "choice_text": "Roasted Tofu",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 21,
+    "fields": {
+      "question": 1,
+      "choice_text": "Cheese Pizza",
+      "votes": 0
+    }
+  },
+  {
+   "model": "polls.choice",
+   "meal": "Dinner",
+   "pk": 22,
+   "fields": {
+      "question": 1,
+      "choice_text": "Cream Cheese Iced Carrot Cake",
+      "votes": 0
+   }
+  },
+  {
+   "model": "polls.choice",
+   "meal": "Dinner",
+   "pk": 23,
+   "fields": {
+      "question": 1,
+      "choice_text": "Cream Cheese Iced Carrot Cake",
+      "votes": 0
+    }
+  },
+  {
+   "model": "polls.choice",
+   "meal": "Dinner",
+   "pk": 24,
+   "fields": {
+      "question": 1,
+      "choice_text": "Mediterranean Pasta Salad",
+      "votes": 0
+    }
+  },
+  {
+   "model": "polls.choice",
+   "meal": "Dinner",
+   "pk": 25,
+   "fields": {
+    "question": 1,
+    "choice_text": "Fajita Vegetable Medley",
+    "votes": 0
+    }
+  },
+  {
+   "model": "polls.choice",
+   "meal": "Dinner",
+   "pk": 26,
+   "fields": {
+      "question": 1,
+      "choice_text": "Vegan Pasta Bake",
+      "votes": 0
+   }
+  },
+  {
+   "model": "polls.choice",
+   "meal": "Dinner",
+   "pk": 27,
+   "fields": {
+      "question": 1,
+      "choice_text": "Blanched Broccoli",
+      "votes": 0
+      }
+  },
+  {
+    "model": "polls.choice",
+    "meal": "Dinner",
+    "pk": 28,
+    "fields": {
+      "question": 1,
+      "choice_text": "Red Potato Salad",
+      "votes": 0
+    }
+  }
+  ]
