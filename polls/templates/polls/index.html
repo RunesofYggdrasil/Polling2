@@ -1,15 +1,62 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Results for {{ question.question_text }}</title>
-</head>
-<body>
-    <h1>{{ question.question_text }}</h1>
-    <ul>
-        {% for choice in choices %}
-            <li>{{ choice.choice_text }}: {{ choice.votes }} vote(s)</li>
-        {% endfor %}
-    </ul>
-    <a href="{% url 'polls:index' %}">Back to Home</a>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="{% static 'navigation.css' %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="{% static 'styles.css' %}"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      s
+    />
+    <title>Test</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-links">
+          <div class="nav-link">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="nav-link">
+            <a href="breakfast.html">Breakfast</a>
+          </div>
+          <div class="nav-link">
+            <a href="lunch.html">Lunch</a>
+          </div>
+          <div class="nav-link">
+            <a href="dinner.html">Dinner</a>
+          </div>
+        </div>
+        <div class="nav-title">
+          <h1>Meal Voting</h1>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="body-container">
+        <div class="body-graph-container">
+          <div class="body-graph">
+            <img src="nothing" />
+          </div>
+          <div class="body-graph">
+            <img src="nothing" />
+          </div>
+          <div class="body-graph">
+            <img src="nothing" />
+          </div>
+        </div>
+        <div class="body-content"><h1>Hi</h1></div>
+      </div>
+    </main>
+    <script src="{% static 'script.js' %}"></script>
+  </body>
 </html>
