@@ -48,7 +48,27 @@
           <div class="body-graph">{{ln_graph|safe}}</div>
           <div class="body-graph">{{dn_graph|safe}}</div>
         </div>
-        <div class="body-content"><h1>Hi</h1></div>
+        <div class="body-content">
+          {% for question, list in choices.items %}
+          <form
+            class="body-form"
+            method="POST"
+            action="{{forloop.counter}}/vote/"
+          >
+            <h1>{{ question }}</h1>
+            {% for choice in list %} {% for id, text in choice.items %}
+            <label for="{{ id }}">{{ text.choice_text }}</label>
+            <input
+              type="checkbox"
+              id="{{ id }}"
+              name="{{ text.meal.lower }}"
+              value="{{ text.choice_text }}"
+            />
+            {% endfor %} {% endfor %}
+            <button type="submit">Submit</button>
+          </form>
+          {% endfor %}
+        </div>
       </div>
     </main>
     <script src="{% static 'script.js' %}"></script>

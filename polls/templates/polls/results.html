@@ -43,18 +43,7 @@
     </nav>
     <main>
       <div class="body-container">
-        <div class="body-graph-container">
-          <div class="body-graph">
-            <img src="nothing" />
-          </div>
-          <div class="body-graph">
-            <img src="nothing" />
-          </div>
-          <div class="body-graph">
-            <img src="nothing" />
-          </div>
-        </div>
-        <div class="body-content"><h1>Hello</h1></div>
+        <div class="body-content">{{ graph|safe }}</div>
       </div>
     </main>
     <script src="{% static 'script.js' %}"></script>
