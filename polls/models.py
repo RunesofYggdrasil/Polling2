@@ -3,32 +3,38 @@ from django.contrib.auth.models import User
 
 # Create your models(tables, each attribute is column) here.
 
-class Question(models.Model): #parent
-    question_text = models.CharField(max_length=200) #column
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
         return self.question_text
 
-class Choice(models.Model): #tracks each choice
-    question = models.ForeignKey(Question, on_delete = models.CASCADE, related_name='choices')
-    choice_text = models.CharField(max_length = 200)
-    meal = models.CharField(max_length = 50, null = True, blank = True)
-    votes = models.IntegerField(default = 0) #tracks votes of each choice w/o associating w/ any user
+class Choice(models.Model):
+    BREAKFAST = 'Breakfast'
+    LUNCH = 'Lunch'
+    DINNER = 'Dinner'
+
+    MEAL_CHOICES = [
+        (BREAKFAST, 'Breakfast'),
+        (LUNCH, 'Lunch'),
+        (DINNER, 'Dinner'),
+    ]
+
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice_text = models.CharField(max_length=200)
+    meal = models.CharField(max_length=10, choices=MEAL_CHOICES)
+    votes = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.choice_text
+        return f"{self.choice_text} ({self.meal})"
     
-class Vote(models.Model): #tracks voting detz for Aaron+ensures every choice is tied to ip
-    question = models.ForeignKey(Question, on_delete = models.CASCADE)
-    choice = models.ForeignKey(Choice, on_delete = models.CASCADE)
-    ip_address = models.GenericIPAddressField()
-    vote_time = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        unique_together = ('question', 'ip_address')
+class Vote(models.Model):
+    choice = models.ForeignKey(Choice, on_delete=models.CASCADE)
+    user_ip = models.GenericIPAddressField()  # To track votes per user (optional)
+    voted_at = models.DateTimeField(auto_now_add=True)  # To track when the vote was cast
 
     def __str__(self):
-        return f"Vote for {self.choice.choice_text} at {self.vote_time} by {self.ip_address}"
+        return f"Vote for {self.choice.choice_text} by {self.user_ip} at {self.voted_at}"
     
 #going to https://127.0.1:8000/admin will lead to login page
