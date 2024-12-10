@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, redirect, render
-from django.http import JsonResponse
+from django.http import HttpResponse
 from matplotlib.style import context
 import matplotlib.pyplot as plt
 from io import StringIO
@@ -37,30 +37,42 @@ def get_graph(question_id):
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    choices = [choice for choice in Choice.objects.all() if choice.question == question]  # Retrieve all choices for the question
-    return render(request, 'polls/results.html', {'question': question, 'choices': choices})
+    return render(request, 'polls/results.html', {'question': question})
+
+def detail(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    choices = question.choice_set.all() #for rook, choice_set is automatically created by Django, it refers to all choices associated to a particular question
+    return render(request, 'polls/detail.html', {'question': question, 'choices': choices})
 
 def index(request):
     data = [get_graph(1), get_graph(2), get_graph(3)]
-    latest_questions = Question.objects.all()  # Get all questions
-    return render(request, 'polls/index.html', {'latest_questions': latest_questions, 'bf_graph': data[0], "ln_graph": data[1], "dn_graph": data[2]})
+    questions = Question.objects.all()  # Get all questions
+    return render(request, 'polls/index.html', {'questions': questions, 'bf_graph': data[0], "ln_graph": data[1], "dn_graph": data[2]})
 
-def vote(request, question_id): #tracking votes by IP
+def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    if request.method == 'POST':  # If it's a POST request, process the vote
-        selected_choices = request.POST.getlist('choices') #as it processes list of choices, ensures many choices per question functionality
-        ip_address = get_client_ip(request)
+    try:
+        # Get the selected choice
+        selected_choice = question.choice_set.get(pk=request.POST['choice'])
+    except (KeyError, Choice.DoesNotExist):
+        # If no choice is selected or an invalid choice is selected
+        return render(request, 'polls/detail.html', {
+            'question': question,
+            'error_message': "You didn't select a choice.",
+        })
+    else:
+        # Check if the user has already voted (if required)
+        if Vote.objects.filter(ip_address=request.META.get('REMOTE_ADDR'), question=question).exists():
+            return HttpResponse("You have already voted for this question.", status=400)
 
-        if Vote.objects.filter(question=question, ip_address=ip_address).exists(): #error message
-            return JsonResponse({"error": "You have already voted!"}, status=403)
-        
-        for choice_id in selected_choices:
-            choice = get_object_or_404(Choice, pk=choice_id, question=question)
-            choice.votes +=1
-            choice.save()
-        
-            Vote.objects.create(question=question, choice=choice, ip_address=ip_address)
-    
+        # Create a new vote for the selected choice
+        selected_choice.votes += 1
+        selected_choice.save()
+
+        # Save the vote in the Vote model
+        Vote.objects.create(choice=selected_choice, ip_address=request.META.get('REMOTE_ADDR'))
+
+        # Redirect to results after voting
         return redirect('polls:results', question_id=question.id)
-    else:  # If it's a GET request, display the results
-        return render(request, 'polls/results.html', {'question': question})
+    
+
