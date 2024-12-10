@@ -1,4 +1,5 @@
 from django.shortcuts import get_object_or_404, redirect, render
+from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from matplotlib.style import context
@@ -38,9 +39,12 @@ def get_graph(question_id):
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    choices = [choice for choice in Choice.objects.all() if choice.question == question]  # Retrieve all choices for the question
-    graph = get_graph(question_id)
-    return render(request, 'polls/results.html', {'question': question, 'choices': choices, 'graph': graph})
+    return render(request, 'polls/results.html', {'question': question})
+
+def detail(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    choices = question.choice_set.all() #for rook, choice_set is automatically created by Django, it refers to all choices associated to a particular question
+    return render(request, 'polls/detail.html', {'question': question, 'choices': choices})
 
 def index(request):
     data = [get_graph(1), get_graph(2), get_graph(3)]
@@ -77,5 +81,5 @@ def vote(request, question_id): #tracking votes by IP
             Vote.objects.create(choice=choice, user_ip=ip_address)
     
         return redirect('polls:results', question_id=question.id)
-    else:  # If it's a GET request, display the results
-        return render(request, 'polls/results.html', {'question': question})
+    
+
