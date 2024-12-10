@@ -70,8 +70,10 @@ def vote(request, question_id): #tracking votes by IP
         print(selected_choices)
         ip_address = get_client_ip(request)
 
-        if Vote.objects.filter(user_ip=ip_address).exists(): #error message
-            return JsonResponse({"error": "You have already voted!"}, status=403)
+        for choice_txt in selected_choices:
+            choice = get_object_or_404(Choice, choice_text=choice_txt, meal=meals[question_id - 1])
+            if Vote.objects.filter(choice=choice, user_ip=ip_address).exists(): #error message
+                return JsonResponse({"error": "You have already voted!"}, status=403)
         
         for choice_txt in selected_choices:
             choice = get_object_or_404(Choice, choice_text=choice_txt, meal=meals[question_id - 1])
